@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 103
-Source Server Version : 50725
-Source Host           : 192.168.1.103:3306
+Source Server         : localhost_3306
+Source Server Version : 50627
+Source Host           : localhost:3306
 Source Database       : cold_chain
 
 Target Server Type    : MYSQL
-Target Server Version : 50725
+Target Server Version : 50627
 File Encoding         : 65001
 
-Date: 2019-08-09 16:31:56
+Date: 2019-08-09 16:56:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -175,9 +175,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('adminQuartzScheduler', 'DESKTOP-PJ2GTFK1565336211556', '1565339513798', '15000');
-INSERT INTO `qrtz_scheduler_state` VALUES ('adminQuartzScheduler', 'DESKTOP-U8JCM5C1565339411366', '1565339518741', '15000');
-INSERT INTO `qrtz_scheduler_state` VALUES ('adminQuartzScheduler', 'fs01.ikats.com1565320611509', '1565339516458', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('adminQuartzScheduler', 'TMRV8CHLHM2F4PK1565239205467', '1565258335142', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -266,168 +264,25 @@ CREATE TABLE `sys_logs` (
   PRIMARY KEY (`id`),
   KEY `userId` (`userId`),
   KEY `createTime` (`createTime`)
-) ENGINE=InnoDB AUTO_INCREMENT=158 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sys_logs
 -- ----------------------------
-INSERT INTO `sys_logs` VALUES ('1', '1', '登陆', '1', null, '2019-08-03 01:37:53');
-INSERT INTO `sys_logs` VALUES ('2', '1', '退出', '1', null, '2019-08-03 01:41:41');
-INSERT INTO `sys_logs` VALUES ('3', '1', '登陆', '1', null, '2019-08-03 01:41:54');
-INSERT INTO `sys_logs` VALUES ('4', '1', '退出', '1', null, '2019-08-03 01:42:06');
-INSERT INTO `sys_logs` VALUES ('5', '1', '登陆', '1', null, '2019-08-03 01:51:30');
-INSERT INTO `sys_logs` VALUES ('6', '1', '登陆', '1', null, '2019-08-03 02:20:18');
-INSERT INTO `sys_logs` VALUES ('7', '1', '登陆', '1', null, '2019-08-03 02:27:48');
-INSERT INTO `sys_logs` VALUES ('8', '1', '登陆', '1', null, '2019-08-03 02:28:10');
-INSERT INTO `sys_logs` VALUES ('9', '1', '登陆', '1', null, '2019-08-03 03:03:38');
-INSERT INTO `sys_logs` VALUES ('10', '1', '登陆', '1', null, '2019-08-03 03:25:50');
-INSERT INTO `sys_logs` VALUES ('11', '1', '登陆', '1', null, '2019-08-03 03:26:43');
-INSERT INTO `sys_logs` VALUES ('12', '1', '登陆', '1', null, '2019-08-03 03:34:25');
-INSERT INTO `sys_logs` VALUES ('13', '1', '登陆', '1', null, '2019-08-03 03:40:30');
-INSERT INTO `sys_logs` VALUES ('14', '1', '登陆', '1', null, '2019-08-03 04:47:14');
-INSERT INTO `sys_logs` VALUES ('15', '1', '登陆', '1', null, '2019-08-03 04:51:42');
-INSERT INTO `sys_logs` VALUES ('16', '1', '退出', '1', null, '2019-08-03 04:55:08');
-INSERT INTO `sys_logs` VALUES ('17', '1', '登陆', '1', null, '2019-08-03 04:55:25');
-INSERT INTO `sys_logs` VALUES ('18', '1', '登陆', '1', null, '2019-08-03 04:58:41');
-INSERT INTO `sys_logs` VALUES ('19', '1', '登陆', '1', null, '2019-08-03 04:59:32');
-INSERT INTO `sys_logs` VALUES ('20', '1', '登陆', '1', null, '2019-08-03 05:03:36');
-INSERT INTO `sys_logs` VALUES ('21', '1', '登陆', '1', null, '2019-08-03 05:04:12');
-INSERT INTO `sys_logs` VALUES ('22', '1', '登陆', '1', null, '2019-08-03 05:19:06');
-INSERT INTO `sys_logs` VALUES ('23', '1', '登陆', '1', null, '2019-08-03 05:28:59');
-INSERT INTO `sys_logs` VALUES ('24', '1', '登陆', '1', null, '2019-08-03 05:29:05');
-INSERT INTO `sys_logs` VALUES ('25', '1', '登陆', '1', null, '2019-08-03 05:29:07');
-INSERT INTO `sys_logs` VALUES ('26', '1', '登陆', '1', null, '2019-08-03 05:49:37');
-INSERT INTO `sys_logs` VALUES ('27', '1', '登陆', '1', null, '2019-08-03 05:50:49');
-INSERT INTO `sys_logs` VALUES ('28', '1', '登陆', '1', null, '2019-08-03 05:51:05');
-INSERT INTO `sys_logs` VALUES ('29', '1', '登陆', '1', null, '2019-08-03 05:54:29');
-INSERT INTO `sys_logs` VALUES ('30', '1', '登陆', '1', null, '2019-08-05 19:47:29');
-INSERT INTO `sys_logs` VALUES ('31', '1', '登陆', '1', null, '2019-08-05 20:17:43');
-INSERT INTO `sys_logs` VALUES ('32', '1', '登陆', '1', null, '2019-08-05 20:19:23');
-INSERT INTO `sys_logs` VALUES ('33', '1', '登陆', '1', null, '2019-08-05 20:21:43');
-INSERT INTO `sys_logs` VALUES ('34', '1', '登陆', '1', null, '2019-08-05 20:50:11');
-INSERT INTO `sys_logs` VALUES ('35', '1', '登陆', '1', null, '2019-08-05 22:21:25');
-INSERT INTO `sys_logs` VALUES ('36', '1', '登陆', '1', null, '2019-08-05 22:32:41');
-INSERT INTO `sys_logs` VALUES ('37', '1', '登陆', '1', null, '2019-08-05 22:35:04');
-INSERT INTO `sys_logs` VALUES ('38', '1', '登陆', '1', null, '2019-08-05 22:35:08');
-INSERT INTO `sys_logs` VALUES ('39', '1', '登陆', '1', null, '2019-08-05 22:35:40');
-INSERT INTO `sys_logs` VALUES ('40', '1', '登陆', '1', null, '2019-08-05 22:43:40');
-INSERT INTO `sys_logs` VALUES ('41', '1', '登陆', '1', null, '2019-08-05 22:48:21');
-INSERT INTO `sys_logs` VALUES ('42', '1', '登陆', '1', null, '2019-08-06 00:40:32');
-INSERT INTO `sys_logs` VALUES ('43', '1', '登陆', '1', null, '2019-08-06 00:42:11');
-INSERT INTO `sys_logs` VALUES ('44', '1', '登陆', '1', null, '2019-08-06 01:19:18');
-INSERT INTO `sys_logs` VALUES ('45', '1', '登陆', '1', null, '2019-08-06 01:23:52');
-INSERT INTO `sys_logs` VALUES ('46', '1', '登陆', '1', null, '2019-08-06 01:26:11');
-INSERT INTO `sys_logs` VALUES ('47', '1', '登陆', '1', null, '2019-08-06 01:27:36');
-INSERT INTO `sys_logs` VALUES ('48', '1', '登陆', '1', null, '2019-08-06 01:31:07');
-INSERT INTO `sys_logs` VALUES ('49', '1', '登陆', '1', null, '2019-08-06 02:24:33');
-INSERT INTO `sys_logs` VALUES ('50', '1', '登陆', '1', null, '2019-08-06 02:29:59');
-INSERT INTO `sys_logs` VALUES ('51', '1', '登陆', '1', null, '2019-08-06 02:36:43');
-INSERT INTO `sys_logs` VALUES ('52', '1', '登陆', '1', null, '2019-08-06 02:44:09');
-INSERT INTO `sys_logs` VALUES ('53', '1', '登陆', '1', null, '2019-08-06 02:55:30');
-INSERT INTO `sys_logs` VALUES ('54', '1', '登陆', '1', null, '2019-08-06 02:58:00');
-INSERT INTO `sys_logs` VALUES ('55', '1', '登陆', '1', null, '2019-08-06 04:22:12');
-INSERT INTO `sys_logs` VALUES ('56', '1', '登陆', '1', null, '2019-08-06 04:33:40');
-INSERT INTO `sys_logs` VALUES ('57', '1', '登陆', '1', null, '2019-08-06 05:16:59');
-INSERT INTO `sys_logs` VALUES ('58', '1', '登陆', '1', null, '2019-08-06 05:17:15');
-INSERT INTO `sys_logs` VALUES ('59', '1', '登陆', '1', null, '2019-08-06 05:17:58');
-INSERT INTO `sys_logs` VALUES ('60', '1', '登陆', '1', null, '2019-08-06 05:38:17');
-INSERT INTO `sys_logs` VALUES ('61', '1', '登陆', '1', null, '2019-08-06 05:38:27');
-INSERT INTO `sys_logs` VALUES ('62', '1', '登陆', '1', null, '2019-08-06 05:59:05');
-INSERT INTO `sys_logs` VALUES ('63', '1', '登陆', '1', null, '2019-08-06 06:03:20');
-INSERT INTO `sys_logs` VALUES ('64', '1', '登陆', '1', null, '2019-08-06 18:21:32');
-INSERT INTO `sys_logs` VALUES ('65', '1', '登陆', '1', null, '2019-08-06 18:28:03');
-INSERT INTO `sys_logs` VALUES ('66', '1', '登陆', '1', null, '2019-08-06 19:42:05');
-INSERT INTO `sys_logs` VALUES ('67', '1', '登陆', '1', null, '2019-08-06 21:18:35');
-INSERT INTO `sys_logs` VALUES ('68', '1', '登陆', '1', null, '2019-08-06 21:41:19');
-INSERT INTO `sys_logs` VALUES ('69', '1', '登陆', '1', null, '2019-08-07 00:02:19');
-INSERT INTO `sys_logs` VALUES ('70', '1', '登陆', '1', null, '2019-08-07 00:02:42');
-INSERT INTO `sys_logs` VALUES ('71', '1', '登陆', '1', null, '2019-08-07 00:04:13');
-INSERT INTO `sys_logs` VALUES ('72', '1', '登陆', '1', null, '2019-08-07 00:05:33');
-INSERT INTO `sys_logs` VALUES ('73', '1', '登陆', '1', null, '2019-08-07 00:07:17');
-INSERT INTO `sys_logs` VALUES ('74', '1', '登陆', '1', null, '2019-08-07 00:28:45');
-INSERT INTO `sys_logs` VALUES ('75', '1', '登陆', '1', null, '2019-08-07 00:29:13');
-INSERT INTO `sys_logs` VALUES ('76', '1', '登陆', '1', null, '2019-08-07 00:30:07');
-INSERT INTO `sys_logs` VALUES ('77', '1', '登陆', '1', null, '2019-08-07 00:32:56');
-INSERT INTO `sys_logs` VALUES ('78', '1', '登陆', '1', null, '2019-08-07 00:40:37');
-INSERT INTO `sys_logs` VALUES ('79', '1', '登陆', '1', null, '2019-08-07 00:49:19');
-INSERT INTO `sys_logs` VALUES ('80', '1', '登陆', '1', null, '2019-08-07 00:49:40');
-INSERT INTO `sys_logs` VALUES ('81', '1', '登陆', '1', null, '2019-08-07 00:50:07');
-INSERT INTO `sys_logs` VALUES ('82', '1', '登陆', '1', null, '2019-08-07 00:53:37');
-INSERT INTO `sys_logs` VALUES ('83', '1', '登陆', '1', null, '2019-08-07 01:18:55');
-INSERT INTO `sys_logs` VALUES ('84', '1', '登陆', '1', null, '2019-08-07 01:19:17');
-INSERT INTO `sys_logs` VALUES ('85', '1', '登陆', '1', null, '2019-08-07 03:05:10');
-INSERT INTO `sys_logs` VALUES ('86', '1', '登陆', '1', null, '2019-08-07 03:08:34');
-INSERT INTO `sys_logs` VALUES ('87', '1', '登陆', '1', null, '2019-08-07 03:13:46');
-INSERT INTO `sys_logs` VALUES ('88', '1', '登陆', '1', null, '2019-08-07 03:16:10');
-INSERT INTO `sys_logs` VALUES ('89', '1', '登陆', '1', null, '2019-08-07 03:17:04');
-INSERT INTO `sys_logs` VALUES ('90', '1', '登陆', '1', null, '2019-08-07 03:27:36');
-INSERT INTO `sys_logs` VALUES ('91', '1', '登陆', '1', null, '2019-08-07 03:28:33');
-INSERT INTO `sys_logs` VALUES ('92', '1', '登陆', '1', null, '2019-08-07 03:28:51');
-INSERT INTO `sys_logs` VALUES ('93', '1', '登陆', '1', null, '2019-08-07 03:30:23');
-INSERT INTO `sys_logs` VALUES ('94', '1', '登陆', '1', null, '2019-08-07 03:36:55');
-INSERT INTO `sys_logs` VALUES ('95', '1', '登陆', '1', null, '2019-08-07 03:38:49');
-INSERT INTO `sys_logs` VALUES ('96', '1', '登陆', '1', null, '2019-08-07 03:39:02');
-INSERT INTO `sys_logs` VALUES ('97', '1', '登陆', '1', null, '2019-08-07 03:39:32');
-INSERT INTO `sys_logs` VALUES ('98', '1', '登陆', '1', null, '2019-08-07 03:43:34');
-INSERT INTO `sys_logs` VALUES ('99', '1', '登陆', '1', null, '2019-08-07 04:24:08');
-INSERT INTO `sys_logs` VALUES ('100', '1', '登陆', '1', null, '2019-08-07 04:26:37');
-INSERT INTO `sys_logs` VALUES ('101', '1', '登陆', '1', null, '2019-08-07 04:28:10');
-INSERT INTO `sys_logs` VALUES ('102', '1', '登陆', '1', null, '2019-08-07 04:29:38');
-INSERT INTO `sys_logs` VALUES ('103', '1', '登陆', '1', null, '2019-08-07 04:29:55');
-INSERT INTO `sys_logs` VALUES ('104', '1', '登陆', '1', null, '2019-08-07 04:30:20');
-INSERT INTO `sys_logs` VALUES ('105', '1', '登陆', '1', null, '2019-08-07 05:41:10');
-INSERT INTO `sys_logs` VALUES ('106', '1', '登陆', '1', null, '2019-08-07 05:42:01');
-INSERT INTO `sys_logs` VALUES ('107', '1', '登陆', '1', null, '2019-08-07 05:54:39');
-INSERT INTO `sys_logs` VALUES ('108', '1', '登陆', '1', null, '2019-08-07 06:01:11');
-INSERT INTO `sys_logs` VALUES ('109', '1', '登陆', '1', null, '2019-08-07 19:10:37');
-INSERT INTO `sys_logs` VALUES ('110', '1', '登陆', '1', null, '2019-08-07 19:28:51');
-INSERT INTO `sys_logs` VALUES ('111', '1', '登陆', '1', null, '2019-08-07 23:53:17');
-INSERT INTO `sys_logs` VALUES ('112', '1', '登陆', '1', null, '2019-08-08 00:02:07');
-INSERT INTO `sys_logs` VALUES ('113', '1', '登陆', '1', null, '2019-08-08 00:13:12');
-INSERT INTO `sys_logs` VALUES ('114', '1', '登陆', '1', null, '2019-08-07 16:44:00');
-INSERT INTO `sys_logs` VALUES ('115', '1', '登陆', '1', null, '2019-08-07 18:37:13');
-INSERT INTO `sys_logs` VALUES ('116', '1', '登陆', '1', null, '2019-08-08 09:39:51');
-INSERT INTO `sys_logs` VALUES ('117', '1', '登陆', '1', null, '2019-08-08 09:40:04');
-INSERT INTO `sys_logs` VALUES ('118', '1', '登陆', '1', null, '2019-08-08 09:46:01');
-INSERT INTO `sys_logs` VALUES ('119', '1', '登陆', '1', null, '2019-08-08 09:49:08');
-INSERT INTO `sys_logs` VALUES ('120', '1', '登陆', '1', null, '2019-08-08 10:07:16');
-INSERT INTO `sys_logs` VALUES ('121', '1', '登陆', '1', null, '2019-08-08 10:09:44');
-INSERT INTO `sys_logs` VALUES ('122', '1', '登陆', '1', null, '2019-08-08 11:26:50');
-INSERT INTO `sys_logs` VALUES ('123', '1', '登陆', '1', null, '2019-08-08 12:12:05');
-INSERT INTO `sys_logs` VALUES ('124', '1', '登陆', '1', null, '2019-08-08 12:13:21');
-INSERT INTO `sys_logs` VALUES ('125', '1', '登陆', '1', null, '2019-08-08 12:14:07');
-INSERT INTO `sys_logs` VALUES ('126', '1', '登陆', '1', null, '2019-08-08 12:33:38');
-INSERT INTO `sys_logs` VALUES ('127', '1', '登陆', '1', null, '2019-08-08 13:57:49');
-INSERT INTO `sys_logs` VALUES ('128', '1', '登陆', '1', null, '2019-08-08 14:55:49');
-INSERT INTO `sys_logs` VALUES ('129', '1', '登陆', '1', null, '2019-08-08 16:52:31');
-INSERT INTO `sys_logs` VALUES ('130', '1', '登陆', '1', null, '2019-08-08 16:53:00');
-INSERT INTO `sys_logs` VALUES ('131', '1', '登陆', '1', null, '2019-08-08 16:54:23');
-INSERT INTO `sys_logs` VALUES ('132', '1', '登陆', '1', null, '2019-08-08 16:58:36');
-INSERT INTO `sys_logs` VALUES ('133', '1', '登陆', '1', null, '2019-08-08 17:38:14');
-INSERT INTO `sys_logs` VALUES ('134', '1', '登陆', '1', null, '2019-08-08 18:11:21');
-INSERT INTO `sys_logs` VALUES ('135', '1', '登陆', '1', null, '2019-08-08 19:09:55');
-INSERT INTO `sys_logs` VALUES ('136', '1', '登陆', '1', null, '2019-08-09 09:53:12');
-INSERT INTO `sys_logs` VALUES ('137', '1', '登陆', '1', null, '2019-08-09 09:57:13');
-INSERT INTO `sys_logs` VALUES ('138', '1', '登陆', '1', null, '2019-08-09 09:57:51');
-INSERT INTO `sys_logs` VALUES ('139', '1', '登陆', '1', null, '2019-08-09 10:12:43');
-INSERT INTO `sys_logs` VALUES ('140', '1', '登陆', '1', null, '2019-08-09 10:17:28');
-INSERT INTO `sys_logs` VALUES ('141', '1', '登陆', '1', null, '2019-08-09 10:23:40');
-INSERT INTO `sys_logs` VALUES ('142', '1', '登陆', '1', null, '2019-08-09 10:24:49');
-INSERT INTO `sys_logs` VALUES ('143', '1', '登陆', '1', null, '2019-08-09 10:28:01');
-INSERT INTO `sys_logs` VALUES ('144', '1', '登陆', '1', null, '2019-08-09 10:29:03');
-INSERT INTO `sys_logs` VALUES ('145', '1', '登陆', '1', null, '2019-08-09 10:53:29');
-INSERT INTO `sys_logs` VALUES ('146', '1', '登陆', '1', null, '2019-08-09 10:55:56');
-INSERT INTO `sys_logs` VALUES ('147', '1', '登陆', '1', null, '2019-08-09 12:02:35');
-INSERT INTO `sys_logs` VALUES ('148', '1', '登陆', '1', null, '2019-08-09 13:35:08');
-INSERT INTO `sys_logs` VALUES ('149', '1', '登陆', '1', null, '2019-08-09 13:36:40');
-INSERT INTO `sys_logs` VALUES ('150', '1', '登陆', '1', null, '2019-08-09 13:38:03');
-INSERT INTO `sys_logs` VALUES ('151', '1', '登陆', '1', null, '2019-08-09 13:39:30');
-INSERT INTO `sys_logs` VALUES ('152', '1', '登陆', '1', null, '2019-08-09 14:09:51');
-INSERT INTO `sys_logs` VALUES ('153', '1', '登陆', '1', null, '2019-08-09 14:15:31');
-INSERT INTO `sys_logs` VALUES ('154', '1', '登陆', '1', null, '2019-08-09 15:38:56');
-INSERT INTO `sys_logs` VALUES ('155', '1', '登陆', '1', null, '2019-08-09 15:40:09');
-INSERT INTO `sys_logs` VALUES ('156', '1', '登陆', '1', null, '2019-08-09 15:42:27');
-INSERT INTO `sys_logs` VALUES ('157', '1', '登陆', '1', null, '2019-08-09 15:47:38');
+INSERT INTO `sys_logs` VALUES ('1', '1', '登陆', '1', null, '2019-08-02 20:10:51');
+INSERT INTO `sys_logs` VALUES ('2', '1', '登陆', '1', null, '2019-08-05 10:32:51');
+INSERT INTO `sys_logs` VALUES ('3', '1', '登陆', '1', null, '2019-08-05 11:03:11');
+INSERT INTO `sys_logs` VALUES ('4', '1', '登陆', '1', null, '2019-08-05 19:02:06');
+INSERT INTO `sys_logs` VALUES ('5', '1', '保存角色', '1', null, '2019-08-05 19:20:33');
+INSERT INTO `sys_logs` VALUES ('6', '1', '退出', '1', null, '2019-08-05 19:29:17');
+INSERT INTO `sys_logs` VALUES ('7', '1', '登陆', '1', null, '2019-08-05 19:29:25');
+INSERT INTO `sys_logs` VALUES ('8', '1', '登陆', '1', null, '2019-08-05 19:51:25');
+INSERT INTO `sys_logs` VALUES ('9', '1', '保存角色', '1', null, '2019-08-05 19:57:24');
+INSERT INTO `sys_logs` VALUES ('10', '1', '登陆', '1', null, '2019-08-05 20:26:34');
+INSERT INTO `sys_logs` VALUES ('11', '1', '登陆', '1', null, '2019-08-05 21:18:09');
+INSERT INTO `sys_logs` VALUES ('12', '1', '保存角色', '1', null, '2019-08-05 21:18:31');
+INSERT INTO `sys_logs` VALUES ('13', '1', '登陆', '1', null, '2019-08-06 16:15:13');
+INSERT INTO `sys_logs` VALUES ('14', '1', '登陆', '1', null, '2019-08-08 12:40:33');
 
 -- ----------------------------
 -- Table structure for sys_permission
@@ -439,44 +294,54 @@ CREATE TABLE `sys_permission` (
   `name` varchar(50) NOT NULL,
   `css` varchar(30) DEFAULT NULL,
   `href` varchar(1000) DEFAULT NULL,
-  `type` tinyint(1) NOT NULL COMMENT '1:资源2:按钮',
+  `type` tinyint(1) NOT NULL,
   `permission` varchar(50) DEFAULT NULL,
   `sort` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sys_permission
 -- ----------------------------
-INSERT INTO `sys_permission` VALUES ('1', '0', '用户管理', 'fa-users', '', '1', '', '1');
-INSERT INTO `sys_permission` VALUES ('2', '1', '账户管理', 'fa-user', '/Frame/User', '1', '', '2');
+INSERT INTO `sys_permission` VALUES ('1', '0', '用户管理', 'fa-users', 'pages/user/userList.html', '1', '', '1');
+INSERT INTO `sys_permission` VALUES ('2', '1', '用户查询', 'fa-user', 'pages/user/userList.html', '1', '', '2');
 INSERT INTO `sys_permission` VALUES ('3', '2', '查询', '', '', '2', 'sys:user:query', '100');
-INSERT INTO `sys_permission` VALUES ('4', '2', '添加', '', '', '2', 'sys:user:add', '100');
-INSERT INTO `sys_permission` VALUES ('42', '2', '编辑', null, null, '2', 'sys:user:edit', '100');
-INSERT INTO `sys_permission` VALUES ('43', '1', '角色管理', 'fa-user', '/Frame/Role', '1', null, '3');
-INSERT INTO `sys_permission` VALUES ('44', '43', '查询', null, null, '2', 'sys:role:query', '100');
-INSERT INTO `sys_permission` VALUES ('45', '43', '添加', null, null, '2', 'sys:role:add', '100');
-INSERT INTO `sys_permission` VALUES ('46', '43', '编辑', null, null, '2', 'sys:role:edit', '100');
-INSERT INTO `sys_permission` VALUES ('47', '43', '删除', null, null, '2', 'sys:role:del', '100');
-INSERT INTO `sys_permission` VALUES ('48', '0', '设备管理', 'fa-users', null, '1', null, '4');
-INSERT INTO `sys_permission` VALUES ('49', '48', '供应商管理', null, '/Frame/Supplier', '1', null, '5');
-INSERT INTO `sys_permission` VALUES ('50', '48', '设备维护', null, '/Frame/Capital', '1', null, '6');
-INSERT INTO `sys_permission` VALUES ('51', '50', '添加', null, '', '2', 'sys:equipment:add', '100');
-INSERT INTO `sys_permission` VALUES ('52', '50', '编辑', null, null, '2', 'sys:equipment:edit', '100');
-INSERT INTO `sys_permission` VALUES ('53', '50', '查询', null, null, '2', 'sys:equipment:query', '100');
-INSERT INTO `sys_permission` VALUES ('54', '50', '删除', null, null, '2', 'sys:equipment:del', '100');
-INSERT INTO `sys_permission` VALUES ('55', '49', '查询', null, null, '2', 'sys:supplier:query', '100');
-INSERT INTO `sys_permission` VALUES ('56', '49', '编辑', null, null, '2', 'sys:supplier:edit', '100');
-INSERT INTO `sys_permission` VALUES ('57', '49', '删除', null, null, '2', 'sys:supplier:del', '100');
-INSERT INTO `sys_permission` VALUES ('58', '49', '添加', null, null, '2', 'sys:supplier:add', '100');
-INSERT INTO `sys_permission` VALUES ('59', '50', '导出', null, null, '2', 'sys:equipment:export', '100');
-INSERT INTO `sys_permission` VALUES ('60', '0', '业务管理', 'fa-users', '', '1', '', '7');
-INSERT INTO `sys_permission` VALUES ('61', '60', '主数据管理', 'fa-user', '', '1', '', '8');
-INSERT INTO `sys_permission` VALUES ('62', '61', '货主管理', 'fa-user', '/Frame/CargoOwner', '1', '', '9');
-INSERT INTO `sys_permission` VALUES ('63', '62', '查询', null, null, '2', 'sys:cargoowner:query', '100');
-INSERT INTO `sys_permission` VALUES ('64', '62', '编辑', null, null, '2', 'sys:cargoowner:edit', '100');
-INSERT INTO `sys_permission` VALUES ('65', '62', '删除', null, null, '2', 'sys:cargoowner:del', '100');
-INSERT INTO `sys_permission` VALUES ('66', '62', '添加', null, null, '2', 'sys:cargoowner:add', '100');
+INSERT INTO `sys_permission` VALUES ('4', '2', '新增', '', '', '2', 'sys:user:add', '100');
+INSERT INTO `sys_permission` VALUES ('6', '0', '修改密码', 'fa-pencil-square-o', 'pages/user/changePassword.html', '1', 'sys:user:password', '4');
+INSERT INTO `sys_permission` VALUES ('7', '0', '系统设置', 'fa-gears', '', '1', '', '5');
+INSERT INTO `sys_permission` VALUES ('8', '7', '菜单', 'fa-cog', 'pages/menu/menuList.html', '1', '', '6');
+INSERT INTO `sys_permission` VALUES ('9', '8', '查询', '', '', '2', 'sys:menu:query', '100');
+INSERT INTO `sys_permission` VALUES ('10', '8', '新增', '', '', '2', 'sys:menu:add', '100');
+INSERT INTO `sys_permission` VALUES ('11', '8', '删除', '', '', '2', 'sys:menu:del', '100');
+INSERT INTO `sys_permission` VALUES ('12', '7', '角色', 'fa-user-secret', 'pages/role/roleList.html', '1', '', '7');
+INSERT INTO `sys_permission` VALUES ('13', '12', '查询', '', '', '2', 'sys:role:query', '100');
+INSERT INTO `sys_permission` VALUES ('14', '12', '新增', '', '', '2', 'sys:role:add', '100');
+INSERT INTO `sys_permission` VALUES ('15', '12', '删除', '', '', '2', 'sys:role:del', '100');
+INSERT INTO `sys_permission` VALUES ('16', '0', '文件管理', 'fa-folder-open', 'pages/file/fileList.html', '1', '', '8');
+INSERT INTO `sys_permission` VALUES ('17', '16', '查询', '', '', '2', 'sys:file:query', '100');
+INSERT INTO `sys_permission` VALUES ('18', '16', '删除', '', '', '2', 'sys:file:del', '100');
+INSERT INTO `sys_permission` VALUES ('19', '0', '数据源监控', 'fa-eye', 'druid/index.html', '1', '', '9');
+INSERT INTO `sys_permission` VALUES ('20', '0', '接口swagger', 'fa-file-pdf-o', 'swagger-ui.html', '1', '', '10');
+INSERT INTO `sys_permission` VALUES ('21', '0', '代码生成', 'fa-wrench', 'pages/generate/edit.html', '1', 'generate:edit', '11');
+INSERT INTO `sys_permission` VALUES ('22', '0', '公告管理', 'fa-book', 'pages/notice/noticeList.html', '1', '', '12');
+INSERT INTO `sys_permission` VALUES ('23', '22', '查询', '', '', '2', 'notice:query', '100');
+INSERT INTO `sys_permission` VALUES ('24', '22', '添加', '', '', '2', 'notice:add', '100');
+INSERT INTO `sys_permission` VALUES ('25', '22', '删除', '', '', '2', 'notice:del', '100');
+INSERT INTO `sys_permission` VALUES ('26', '0', '日志查询', 'fa-reorder', 'pages/log/logList.html', '1', 'sys:log:query', '13');
+INSERT INTO `sys_permission` VALUES ('27', '0', '邮件管理', 'fa-envelope', 'pages/mail/mailList.html', '1', '', '14');
+INSERT INTO `sys_permission` VALUES ('28', '27', '发送邮件', '', '', '2', 'mail:send', '100');
+INSERT INTO `sys_permission` VALUES ('29', '27', '查询', '', '', '2', 'mail:all:query', '100');
+INSERT INTO `sys_permission` VALUES ('30', '0', '定时任务管理', 'fa-tasks', 'pages/job/jobList.html', '1', '', '15');
+INSERT INTO `sys_permission` VALUES ('31', '30', '查询', '', '', '2', 'job:query', '100');
+INSERT INTO `sys_permission` VALUES ('32', '30', '新增', '', '', '2', 'job:add', '100');
+INSERT INTO `sys_permission` VALUES ('33', '30', '删除', '', '', '2', 'job:del', '100');
+INSERT INTO `sys_permission` VALUES ('34', '0', 'excel导出', 'fa-arrow-circle-down', 'pages/excel/sql.html', '1', '', '16');
+INSERT INTO `sys_permission` VALUES ('35', '34', '导出', '', '', '2', 'excel:down', '100');
+INSERT INTO `sys_permission` VALUES ('36', '34', '页面显示数据', '', '', '2', 'excel:show:datas', '100');
+INSERT INTO `sys_permission` VALUES ('37', '0', '字典管理', 'fa-reddit', 'pages/dict/dictList.html', '1', '', '17');
+INSERT INTO `sys_permission` VALUES ('38', '37', '查询', '', '', '2', 'dict:query', '100');
+INSERT INTO `sys_permission` VALUES ('39', '37', '新增', '', '', '2', 'dict:add', '100');
+INSERT INTO `sys_permission` VALUES ('40', '37', '删除', '', '', '2', 'dict:del', '100');
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -490,22 +355,16 @@ CREATE TABLE `sys_role` (
   `updateTime` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
 INSERT INTO `sys_role` VALUES ('1', 'ADMIN', '管理员', '2017-05-01 13:25:39', '2017-10-05 21:59:18');
 INSERT INTO `sys_role` VALUES ('2', 'USER', '', '2017-08-01 21:47:31', '2017-10-05 21:59:26');
-INSERT INTO `sys_role` VALUES ('3', '供应商', null, '2019-08-06 20:18:04', '2019-08-06 20:18:04');
-INSERT INTO `sys_role` VALUES ('4', '供应商1', null, '2019-08-06 20:18:30', '2019-08-06 20:18:30');
-INSERT INTO `sys_role` VALUES ('5', '角色1', null, '2019-08-06 20:23:47', '2019-08-06 20:23:47');
-INSERT INTO `sys_role` VALUES ('6', '角色2', null, '2019-08-06 20:25:18', '2019-08-06 20:25:18');
-INSERT INTO `sys_role` VALUES ('7', '供应商2', null, '2019-08-06 20:38:56', '2019-08-06 20:38:56');
-INSERT INTO `sys_role` VALUES ('8', '111', null, '2019-08-06 23:16:58', '2019-08-06 23:16:58');
-INSERT INTO `sys_role` VALUES ('9', '222', null, '2019-08-06 23:19:46', '2019-08-06 23:19:46');
-INSERT INTO `sys_role` VALUES ('10', '33', null, '2019-08-06 23:31:17', '2019-08-06 23:31:17');
-INSERT INTO `sys_role` VALUES ('11', '333', null, '2019-08-06 23:32:40', '2019-08-06 23:32:40');
+INSERT INTO `sys_role` VALUES ('3', '测试校色', '12312312', '2019-08-05 19:20:33', '2019-08-05 19:20:33');
+INSERT INTO `sys_role` VALUES ('4', 'cccccc', 'sdfsafsd', '2019-08-05 19:57:24', '2019-08-05 19:57:24');
+INSERT INTO `sys_role` VALUES ('5', '12121', '123123', '2019-08-05 21:18:31', '2019-08-05 21:18:31');
 
 -- ----------------------------
 -- Table structure for sys_role_permission
@@ -559,13 +418,6 @@ INSERT INTO `sys_role_permission` VALUES ('1', '37');
 INSERT INTO `sys_role_permission` VALUES ('1', '38');
 INSERT INTO `sys_role_permission` VALUES ('1', '39');
 INSERT INTO `sys_role_permission` VALUES ('1', '40');
-INSERT INTO `sys_role_permission` VALUES ('1', '60');
-INSERT INTO `sys_role_permission` VALUES ('1', '61');
-INSERT INTO `sys_role_permission` VALUES ('1', '62');
-INSERT INTO `sys_role_permission` VALUES ('1', '63');
-INSERT INTO `sys_role_permission` VALUES ('1', '64');
-INSERT INTO `sys_role_permission` VALUES ('1', '65');
-INSERT INTO `sys_role_permission` VALUES ('1', '66');
 INSERT INTO `sys_role_permission` VALUES ('2', '1');
 INSERT INTO `sys_role_permission` VALUES ('2', '2');
 INSERT INTO `sys_role_permission` VALUES ('2', '3');
@@ -594,25 +446,115 @@ INSERT INTO `sys_role_permission` VALUES ('2', '30');
 INSERT INTO `sys_role_permission` VALUES ('2', '31');
 INSERT INTO `sys_role_permission` VALUES ('2', '34');
 INSERT INTO `sys_role_permission` VALUES ('2', '36');
-INSERT INTO `sys_role_permission` VALUES ('3', '1');
-INSERT INTO `sys_role_permission` VALUES ('3', '2');
-INSERT INTO `sys_role_permission` VALUES ('4', '1');
-INSERT INTO `sys_role_permission` VALUES ('4', '2');
+INSERT INTO `sys_role_permission` VALUES ('3', '6');
+INSERT INTO `sys_role_permission` VALUES ('3', '7');
+INSERT INTO `sys_role_permission` VALUES ('3', '8');
+INSERT INTO `sys_role_permission` VALUES ('3', '9');
+INSERT INTO `sys_role_permission` VALUES ('3', '10');
+INSERT INTO `sys_role_permission` VALUES ('3', '11');
+INSERT INTO `sys_role_permission` VALUES ('3', '12');
+INSERT INTO `sys_role_permission` VALUES ('3', '13');
+INSERT INTO `sys_role_permission` VALUES ('3', '14');
+INSERT INTO `sys_role_permission` VALUES ('3', '15');
+INSERT INTO `sys_role_permission` VALUES ('3', '16');
+INSERT INTO `sys_role_permission` VALUES ('3', '17');
+INSERT INTO `sys_role_permission` VALUES ('3', '18');
+INSERT INTO `sys_role_permission` VALUES ('3', '19');
+INSERT INTO `sys_role_permission` VALUES ('3', '20');
+INSERT INTO `sys_role_permission` VALUES ('3', '21');
+INSERT INTO `sys_role_permission` VALUES ('3', '22');
+INSERT INTO `sys_role_permission` VALUES ('3', '23');
+INSERT INTO `sys_role_permission` VALUES ('3', '24');
+INSERT INTO `sys_role_permission` VALUES ('3', '25');
+INSERT INTO `sys_role_permission` VALUES ('3', '26');
+INSERT INTO `sys_role_permission` VALUES ('3', '27');
+INSERT INTO `sys_role_permission` VALUES ('3', '28');
+INSERT INTO `sys_role_permission` VALUES ('3', '29');
+INSERT INTO `sys_role_permission` VALUES ('3', '30');
+INSERT INTO `sys_role_permission` VALUES ('3', '31');
+INSERT INTO `sys_role_permission` VALUES ('3', '32');
+INSERT INTO `sys_role_permission` VALUES ('3', '33');
+INSERT INTO `sys_role_permission` VALUES ('3', '34');
+INSERT INTO `sys_role_permission` VALUES ('3', '35');
+INSERT INTO `sys_role_permission` VALUES ('3', '36');
+INSERT INTO `sys_role_permission` VALUES ('3', '37');
+INSERT INTO `sys_role_permission` VALUES ('3', '38');
+INSERT INTO `sys_role_permission` VALUES ('3', '39');
+INSERT INTO `sys_role_permission` VALUES ('3', '40');
+INSERT INTO `sys_role_permission` VALUES ('4', '6');
+INSERT INTO `sys_role_permission` VALUES ('4', '7');
+INSERT INTO `sys_role_permission` VALUES ('4', '8');
+INSERT INTO `sys_role_permission` VALUES ('4', '9');
+INSERT INTO `sys_role_permission` VALUES ('4', '10');
+INSERT INTO `sys_role_permission` VALUES ('4', '11');
+INSERT INTO `sys_role_permission` VALUES ('4', '12');
+INSERT INTO `sys_role_permission` VALUES ('4', '13');
+INSERT INTO `sys_role_permission` VALUES ('4', '14');
+INSERT INTO `sys_role_permission` VALUES ('4', '15');
+INSERT INTO `sys_role_permission` VALUES ('4', '16');
+INSERT INTO `sys_role_permission` VALUES ('4', '17');
+INSERT INTO `sys_role_permission` VALUES ('4', '18');
+INSERT INTO `sys_role_permission` VALUES ('4', '19');
+INSERT INTO `sys_role_permission` VALUES ('4', '20');
+INSERT INTO `sys_role_permission` VALUES ('4', '21');
+INSERT INTO `sys_role_permission` VALUES ('4', '22');
+INSERT INTO `sys_role_permission` VALUES ('4', '23');
+INSERT INTO `sys_role_permission` VALUES ('4', '24');
+INSERT INTO `sys_role_permission` VALUES ('4', '25');
+INSERT INTO `sys_role_permission` VALUES ('4', '26');
+INSERT INTO `sys_role_permission` VALUES ('4', '27');
+INSERT INTO `sys_role_permission` VALUES ('4', '28');
+INSERT INTO `sys_role_permission` VALUES ('4', '29');
+INSERT INTO `sys_role_permission` VALUES ('4', '30');
+INSERT INTO `sys_role_permission` VALUES ('4', '31');
+INSERT INTO `sys_role_permission` VALUES ('4', '32');
+INSERT INTO `sys_role_permission` VALUES ('4', '33');
+INSERT INTO `sys_role_permission` VALUES ('4', '34');
+INSERT INTO `sys_role_permission` VALUES ('4', '35');
+INSERT INTO `sys_role_permission` VALUES ('4', '36');
+INSERT INTO `sys_role_permission` VALUES ('4', '37');
+INSERT INTO `sys_role_permission` VALUES ('4', '38');
+INSERT INTO `sys_role_permission` VALUES ('4', '39');
+INSERT INTO `sys_role_permission` VALUES ('4', '40');
+INSERT INTO `sys_role_permission` VALUES ('5', '1');
+INSERT INTO `sys_role_permission` VALUES ('5', '2');
+INSERT INTO `sys_role_permission` VALUES ('5', '3');
+INSERT INTO `sys_role_permission` VALUES ('5', '4');
+INSERT INTO `sys_role_permission` VALUES ('5', '6');
+INSERT INTO `sys_role_permission` VALUES ('5', '7');
 INSERT INTO `sys_role_permission` VALUES ('5', '8');
 INSERT INTO `sys_role_permission` VALUES ('5', '9');
-INSERT INTO `sys_role_permission` VALUES ('6', '9');
-INSERT INTO `sys_role_permission` VALUES ('6', '10');
-INSERT INTO `sys_role_permission` VALUES ('7', '1');
-INSERT INTO `sys_role_permission` VALUES ('7', '2');
-INSERT INTO `sys_role_permission` VALUES ('8', '4');
-INSERT INTO `sys_role_permission` VALUES ('8', '6');
-INSERT INTO `sys_role_permission` VALUES ('9', '9');
-INSERT INTO `sys_role_permission` VALUES ('9', '10');
-INSERT INTO `sys_role_permission` VALUES ('9', '11');
-INSERT INTO `sys_role_permission` VALUES ('10', '10');
-INSERT INTO `sys_role_permission` VALUES ('10', '11');
-INSERT INTO `sys_role_permission` VALUES ('11', '1');
-INSERT INTO `sys_role_permission` VALUES ('11', '2');
+INSERT INTO `sys_role_permission` VALUES ('5', '10');
+INSERT INTO `sys_role_permission` VALUES ('5', '11');
+INSERT INTO `sys_role_permission` VALUES ('5', '12');
+INSERT INTO `sys_role_permission` VALUES ('5', '13');
+INSERT INTO `sys_role_permission` VALUES ('5', '14');
+INSERT INTO `sys_role_permission` VALUES ('5', '15');
+INSERT INTO `sys_role_permission` VALUES ('5', '16');
+INSERT INTO `sys_role_permission` VALUES ('5', '17');
+INSERT INTO `sys_role_permission` VALUES ('5', '18');
+INSERT INTO `sys_role_permission` VALUES ('5', '19');
+INSERT INTO `sys_role_permission` VALUES ('5', '20');
+INSERT INTO `sys_role_permission` VALUES ('5', '21');
+INSERT INTO `sys_role_permission` VALUES ('5', '22');
+INSERT INTO `sys_role_permission` VALUES ('5', '23');
+INSERT INTO `sys_role_permission` VALUES ('5', '24');
+INSERT INTO `sys_role_permission` VALUES ('5', '25');
+INSERT INTO `sys_role_permission` VALUES ('5', '26');
+INSERT INTO `sys_role_permission` VALUES ('5', '27');
+INSERT INTO `sys_role_permission` VALUES ('5', '28');
+INSERT INTO `sys_role_permission` VALUES ('5', '29');
+INSERT INTO `sys_role_permission` VALUES ('5', '30');
+INSERT INTO `sys_role_permission` VALUES ('5', '31');
+INSERT INTO `sys_role_permission` VALUES ('5', '32');
+INSERT INTO `sys_role_permission` VALUES ('5', '33');
+INSERT INTO `sys_role_permission` VALUES ('5', '34');
+INSERT INTO `sys_role_permission` VALUES ('5', '35');
+INSERT INTO `sys_role_permission` VALUES ('5', '36');
+INSERT INTO `sys_role_permission` VALUES ('5', '37');
+INSERT INTO `sys_role_permission` VALUES ('5', '38');
+INSERT INTO `sys_role_permission` VALUES ('5', '39');
+INSERT INTO `sys_role_permission` VALUES ('5', '40');
 
 -- ----------------------------
 -- Table structure for sys_role_user
@@ -629,8 +571,6 @@ CREATE TABLE `sys_role_user` (
 -- ----------------------------
 INSERT INTO `sys_role_user` VALUES ('1', '1');
 INSERT INTO `sys_role_user` VALUES ('2', '2');
-INSERT INTO `sys_role_user` VALUES ('3', '1');
-INSERT INTO `sys_role_user` VALUES ('4', '3');
 
 -- ----------------------------
 -- Table structure for sys_user
@@ -638,76 +578,27 @@ INSERT INTO `sys_role_user` VALUES ('4', '3');
 DROP TABLE IF EXISTS `sys_user`;
 CREATE TABLE `sys_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL COMMENT '用户名',
-  `password` varchar(60) NOT NULL COMMENT '密码',
-  `nickname` varchar(255) DEFAULT NULL COMMENT '昵称',
-  `headImgUrl` varchar(255) DEFAULT NULL COMMENT '头像地址',
-  `phone` varchar(11) DEFAULT NULL COMMENT '手机号',
-  `telephone` varchar(30) DEFAULT NULL COMMENT '电话',
-  `email` varchar(50) DEFAULT NULL COMMENT '邮箱',
-  `birthday` date DEFAULT NULL COMMENT '生日',
-  `sex` tinyint(1) DEFAULT NULL COMMENT '性别',
+  `username` varchar(50) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `nickname` varchar(255) DEFAULT NULL,
+  `headImgUrl` varchar(255) DEFAULT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  `telephone` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `sex` tinyint(1) DEFAULT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
-  `security` varchar(50) DEFAULT NULL COMMENT '公共接口安全参数security',
   `createTime` datetime NOT NULL,
   `updateTime` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES ('1', 'admin', '$2a$10$iYM/H7TrSaLs7XyIWQdGwe1xf4cdmt3nwMja6RT0wxG5YY1RjN0EK', '管理员', null, '', '', '', '1998-07-01', '0', '1', '1', '2017-04-10 15:21:38', '2017-07-06 09:20:19');
-INSERT INTO `sys_user` VALUES ('2', 'user', '$2a$10$ooGb4wjT7Hg3zgU2RhZp6eVu3jvG29i/U4L6VRwiZZ4.DZ0OOEAHu', '用户', null, '', '', '', null, '1', '1', '1', '2017-08-01 21:47:18', '2017-08-01 21:47:18');
-INSERT INTO `sys_user` VALUES ('3', 'shenjian@ikats.com', '$2a$10$HKZP487xalI8WTDLUugGpOX78.QnEMmiDtes76paSgE8kXOsznHkW', '管理员', null, '17610055555', '', 'shenjian@ikats.com', '2019-08-08', '1', '1', null, '2019-08-08 17:22:42', '2019-08-08 18:26:21');
-INSERT INTO `sys_user` VALUES ('4', 'name', '$2a$10$Rvfv0Ocohhedpa70BVRhqewx8q5nrs0YXEFZ2krmmlc2Vu7N1eJIW', 'tian', null, '1', null, null, null, null, '1', null, '2019-08-08 19:56:18', '2019-08-08 19:56:18');
-
--- ----------------------------
--- Table structure for t_cargo_owner
--- ----------------------------
-DROP TABLE IF EXISTS `t_cargo_owner`;
-CREATE TABLE `t_cargo_owner` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ownerCode` varchar(255) DEFAULT '' COMMENT '货主编码',
-  `ownerName` varchar(255) DEFAULT '' COMMENT '货主名称',
-  `status` int(1) DEFAULT '1' COMMENT '0不可用1可用',
-  `createTime` datetime DEFAULT NULL,
-  `updateTime` datetime DEFAULT NULL,
-  `createName` varchar(255) DEFAULT '' COMMENT '创建人',
-  `updateName` varchar(255) DEFAULT '' COMMENT '更新人',
-  `isDelete` varchar(255) DEFAULT '1' COMMENT '是否删除 1正常 0删除',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_cargo_owner
--- ----------------------------
-INSERT INTO `t_cargo_owner` VALUES ('28', 'ownercode1', 'ownername1', '1', '2019-08-08 17:17:55', '2019-08-08 17:18:49', 'admin', 'admin', '1');
-INSERT INTO `t_cargo_owner` VALUES ('29', 'ownercode2', 'ownername2', '1', '2019-08-08 17:18:05', null, 'admin', '', '1');
-INSERT INTO `t_cargo_owner` VALUES ('30', 'ownercode', 'ownername', '1', '2019-08-09 14:25:53', '2019-08-09 14:26:10', 'admin', 'admin', '0');
-
--- ----------------------------
--- Table structure for t_carriers
--- ----------------------------
-DROP TABLE IF EXISTS `t_carriers`;
-CREATE TABLE `t_carriers` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `carriersCode` varchar(255) DEFAULT '' COMMENT '货主编码',
-  `carriersName` varchar(255) DEFAULT '' COMMENT '货主名称',
-  `status` int(1) DEFAULT '1' COMMENT '0不可用1可用',
-  `createTime` datetime DEFAULT NULL,
-  `updateTime` datetime DEFAULT NULL,
-  `createName` varchar(255) DEFAULT '' COMMENT '创建人',
-  `updateName` varchar(255) DEFAULT '' COMMENT '更新人',
-  `isDelete` varchar(255) DEFAULT '1' COMMENT '是否删除 1正常 0删除',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_carriers
--- ----------------------------
-INSERT INTO `t_carriers` VALUES ('4', 'carrierscode', 'carriersname', '1', '2019-08-09 16:19:11', null, 'admin', '', '1');
+INSERT INTO `sys_user` VALUES ('1', 'admin', '$2a$10$iYM/H7TrSaLs7XyIWQdGwe1xf4cdmt3nwMja6RT0wxG5YY1RjN0EK', '管理员', null, '', '', '', '1998-07-01', '0', '1', '2017-04-10 15:21:38', '2017-07-06 09:20:19');
+INSERT INTO `sys_user` VALUES ('2', 'user', '$2a$10$ooGb4wjT7Hg3zgU2RhZp6eVu3jvG29i/U4L6VRwiZZ4.DZ0OOEAHu', '用户', null, '', '', '', null, '1', '1', '2017-08-01 21:47:18', '2017-08-01 21:47:18');
 
 -- ----------------------------
 -- Table structure for t_dict
@@ -722,7 +613,7 @@ CREATE TABLE `t_dict` (
   `updateTime` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `type` (`type`,`k`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of t_dict
@@ -736,246 +627,6 @@ INSERT INTO `t_dict` VALUES ('6', 'noticeStatus', '0', '草稿', '2017-11-17 16:
 INSERT INTO `t_dict` VALUES ('7', 'noticeStatus', '1', '发布', '2017-11-17 16:26:06', '2017-11-17 16:26:09');
 INSERT INTO `t_dict` VALUES ('8', 'isRead', '0', '未读', '2017-11-17 16:26:06', '2017-11-17 16:26:09');
 INSERT INTO `t_dict` VALUES ('9', 'isRead', '1', '已读', '2017-11-17 16:26:06', '2017-11-17 16:26:09');
-INSERT INTO `t_dict` VALUES ('10', 'equipmentType', '1', '冷链车便携式记录仪', '2019-08-05 14:46:12', '2019-08-05 14:46:14');
-INSERT INTO `t_dict` VALUES ('11', 'equipmentType', '2', '方舱', '2019-08-05 14:46:49', '2019-08-05 14:46:52');
-INSERT INTO `t_dict` VALUES ('12', 'warehouse', '1', '北京仓库', '2019-08-05 14:57:11', '2019-08-05 14:57:14');
-INSERT INTO `t_dict` VALUES ('13', 'warehouse', '2', '深圳仓库', '2019-08-05 14:57:23', '2019-08-05 14:57:25');
-INSERT INTO `t_dict` VALUES ('14', 'warehouse', '3', '南京仓库', '2019-08-05 14:57:54', '2019-08-05 14:57:56');
-INSERT INTO `t_dict` VALUES ('15', 'equipmentType', '3', '泡沫箱', '2019-08-07 13:05:07', '2019-08-07 13:05:09');
-INSERT INTO `t_dict` VALUES ('16', 'equipmentStatus', '1', '入库待检', '2019-08-07 13:06:46', '2019-08-07 13:06:50');
-INSERT INTO `t_dict` VALUES ('17', 'equipmentStatus', '2', '可用', '2019-08-07 13:06:59', '2019-08-07 13:07:02');
-INSERT INTO `t_dict` VALUES ('18', 'equipmentStatus', '3', '报废', '2019-08-07 13:07:33', '2019-08-07 13:07:36');
-INSERT INTO `t_dict` VALUES ('19', 'equipmentStatus', '4', '报修', '2019-08-07 13:07:56', '2019-08-07 13:07:58');
-
--- ----------------------------
--- Table structure for t_equipment
--- ----------------------------
-DROP TABLE IF EXISTS `t_equipment`;
-CREATE TABLE `t_equipment` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `number` varchar(255) DEFAULT '' COMMENT '设备编号 例如:HD0001',
-  `name` varchar(255) DEFAULT '' COMMENT '设备组名称',
-  `supplierNumber` varchar(255) DEFAULT '' COMMENT '供应商名称',
-  `createTime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `createName` varchar(255) DEFAULT NULL,
-  `updateTime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `updateName` varchar(255) DEFAULT NULL,
-  `isDelete` varchar(255) DEFAULT '1' COMMENT '1正常0失败',
-  `supplierName` varchar(255) DEFAULT '' COMMENT '供应商名称',
-  `orgNumber` varchar(255) DEFAULT '' COMMENT '关联设备组id',
-  `type` int(3) DEFAULT '1' COMMENT '箱子类型， 见t_dict表',
-  `model` varchar(255) DEFAULT '' COMMENT '型号',
-  `SN` varchar(255) DEFAULT NULL COMMENT 'SN编码',
-  `warehouse` varchar(255) DEFAULT NULL,
-  `status` varchar(255) DEFAULT '1' COMMENT '设备状态',
-  `isStart` int(1) DEFAULT '0' COMMENT '1启用0停用',
-  `manufacturer` varchar(255) DEFAULT '' COMMENT '生产厂商',
-  `productionDate` date DEFAULT NULL COMMENT '生产日期',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_equipment
--- ----------------------------
-INSERT INTO `t_equipment` VALUES ('3', 'HD0001', '设备HD00012', '222222', '2019-08-08 16:05:47', null, '2019-08-08 16:05:47', 'admin', '0', '供应1', '111111', '3', 'h112', 'sn1212121212', '3', '2', '1', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('4', 'HD0003', '设备1', '111111', '2019-08-08 16:06:57', null, '2019-08-08 16:06:57', null, '0', '供应1', '111111', '1', 'h11', 'sn121212121', '2', '2', '1', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('5', 'HD0004', '设备1', '111111', '2019-08-09 10:19:52', null, '2019-08-09 10:19:52', null, '0', '供应1', '111111', '2', 'h11', 'sn121212121', '2', '2', '0', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('6', 'HD0005', '设备1', '111111', '2019-08-09 16:07:52', null, '2019-08-09 16:17:07', 'admin', '1', '供应1', '222222', '1', 'h11', 'sn121212121', '2', '1', '1', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('7', 'HD0006', '设备1', '', '2019-08-09 10:24:04', null, '2019-08-09 10:24:04', null, '1', '供应1', '111111', '1', 'h11', 'sn121212121', '2', '1', '1', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('8', 'HD0007', '设备1', '111111', '2019-08-09 10:19:46', 'admin', '2019-08-09 10:19:46', 'admin', '0', '供应1', '', '2', 'h11', 'sn121212121', '2', '4', '0', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('9', 'HD0008', '设备1', '111111', '2019-08-07 20:53:43', 'admin', '2019-08-07 20:53:43', 'admin', '0', '供应1', '', '1', 'h11', 'sn121212121', '2', '1', '0', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('10', 'HD0009', '设备1333', '222222', '2019-08-09 10:47:09', 'admin', '2019-08-09 10:56:23', 'admin', '1', '供应1', '555555', '3', 'h11', 'sn12121212144', '2', '1', '1', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('11', 'HD00010', '设备1', '111111', '2019-08-07 20:53:43', 'admin', '2019-08-07 20:53:43', 'admin', '0', '供应1', '5555', '1', 'h11', 'sn121212121', '2', '1', '0', '北京电气1厂', '2016-05-05');
-INSERT INTO `t_equipment` VALUES ('12', 'HD00011', '111', '111111', '2019-08-07 20:53:26', null, '2019-08-07 20:53:26', null, '0', '', '', '1', '111', 'sn', 'ck', '0', '0', '', '2019-08-29');
-INSERT INTO `t_equipment` VALUES ('13', 'HD00012', '1112', '111111', '2019-08-07 23:11:54', null, '2019-08-07 23:11:54', null, '0', '', '', '2', '1112', 'sn', 'ck', '0', '0', '', '2019-08-06');
-INSERT INTO `t_equipment` VALUES ('14', '001', '设备1', '222222', '2019-08-09 10:24:04', 'admin', '2019-08-09 10:24:04', 'admin', '1', '', '', '3', '型号1', 'sn1', '1', '1', '1', '', '2019-08-07');
-INSERT INTO `t_equipment` VALUES ('15', '111333', 'tttttttttt', '111111', '2019-08-09 10:20:11', 'admin', '2019-08-09 10:20:11', 'admin', '0', '', '', '1', '111', 'sn', null, '2', '0', '', '2019-08-07');
-INSERT INTO `t_equipment` VALUES ('16', '20190808001', '美丽的可可西里', '222222', '2019-08-09 10:57:04', 'admin', '2019-08-09 10:57:04', 'admin', '1', '', '', '2', 'CN-001', '7890000111', '1', '1', '1', '', '2019-08-29');
-INSERT INTO `t_equipment` VALUES ('17', '0011', '111', '111111', '2019-08-09 15:44:07', 'admin', '2019-08-09 15:44:07', 'admin', '1', '', '', '1', '111', 'sn1', '1', '3', '1', '', '2019-08-09');
-
--- ----------------------------
--- Table structure for t_equipment_log
--- ----------------------------
-DROP TABLE IF EXISTS `t_equipment_log`;
-CREATE TABLE `t_equipment_log` (
-  `id` int(11) NOT NULL,
-  `operation` varchar(255) DEFAULT '' COMMENT '操作动作',
-  `operationDate` datetime DEFAULT NULL,
-  `equiomentOrgName` varchar(255) DEFAULT '' COMMENT '设备组名称',
-  `equiomentName` varchar(255) DEFAULT '' COMMENT '设备名称',
-  `equiomentNumber` varchar(255) DEFAULT '' COMMENT '关联设备编号',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_equipment_log
--- ----------------------------
-
--- ----------------------------
--- Table structure for t_equipment_operation
--- ----------------------------
-DROP TABLE IF EXISTS `t_equipment_operation`;
-CREATE TABLE `t_equipment_operation` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `equipmentCode` varchar(50) DEFAULT NULL COMMENT '设备编码，对应设备表number',
-  `equipmentOrderNO` varchar(50) DEFAULT NULL COMMENT '设备订单号',
-  `equipmentTime` datetime DEFAULT NULL COMMENT '设备当时时间',
-  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间，也是收到数据时间',
-  `operationTime` varchar(50) DEFAULT NULL COMMENT '执行开始时间',
-  `finishTime` varchar(50) DEFAULT NULL COMMENT '执行结束时间',
-  `actionName` varchar(50) DEFAULT NULL COMMENT '执行操作名称',
-  `actionCode` int(11) DEFAULT NULL COMMENT '执行操作代码',
-  `operater` varchar(50) DEFAULT NULL COMMENT '操作员',
-  `temperatureIn` double DEFAULT NULL COMMENT '箱内温度 单位摄氏度',
-  `temperatureOut` double DEFAULT NULL COMMENT '箱外温度 单位摄氏度',
-  `humidity` double DEFAULT NULL COMMENT '设备湿度',
-  `voltage` double DEFAULT NULL COMMENT '设备电量',
-  `longitude` double DEFAULT NULL COMMENT '经度',
-  `latitude` double DEFAULT NULL COMMENT '纬度',
-  `openStatus` tinyint(4) DEFAULT NULL COMMENT '开箱状态 0: 开箱 1: 关箱',
-  `compressorStatus` tinyint(4) DEFAULT NULL COMMENT '压缩机状态  0:开机 1: 关机',
-  `temperatureUpperLimit` double DEFAULT NULL COMMENT '设备温度上限',
-  `temperatureLowerLimit` double DEFAULT NULL COMMENT '设备温度下限',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='远程上传设备操作日志记录表';
-
--- ----------------------------
--- Records of t_equipment_operation
--- ----------------------------
-INSERT INTO `t_equipment_operation` VALUES ('1', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 17:00:35', '2019 / 8 / 6 15: 31 ', null, 'run ', null, null, null, null, null, null, null, null, null, null, null, null);
-INSERT INTO `t_equipment_operation` VALUES ('2', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 17:21:38', '2019/8/6 15:31 ', null, 'run', null, null, '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2');
-INSERT INTO `t_equipment_operation` VALUES ('3', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 17:38:22', '2019/8/6 15:31 ', '2019/8/6 15:35', 'run', '1', '张三', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2');
-INSERT INTO `t_equipment_operation` VALUES ('4', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 17:38:42', '2019/8/6 15:31 ', '2019/8/6 15:35', 'run', '1', '张三', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2');
-INSERT INTO `t_equipment_operation` VALUES ('5', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 18:29:31', '2019/8/6 15:31 ', '2019/8/6 15:35', 'run', '1', '张三', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2');
-
--- ----------------------------
--- Table structure for t_equipment_org
--- ----------------------------
-DROP TABLE IF EXISTS `t_equipment_org`;
-CREATE TABLE `t_equipment_org` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `number` varchar(11) DEFAULT '' COMMENT '设备组id',
-  `equipmentName` varchar(255) DEFAULT '' COMMENT '设备名称',
-  `supplierNumber` varchar(255) DEFAULT '' COMMENT '关联设备number',
-  `isDelete` varchar(255) DEFAULT '1' COMMENT '1正常0删除',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_equipment_org
--- ----------------------------
-INSERT INTO `t_equipment_org` VALUES ('1', '111111', '设备组1', '111111', '1');
-INSERT INTO `t_equipment_org` VALUES ('2', '222222', '设备组2', '111111', '1');
-INSERT INTO `t_equipment_org` VALUES ('3', '333333', '设备组3', '111111', '1');
-INSERT INTO `t_equipment_org` VALUES ('4', '444444', '设备组1', '222222', '1');
-INSERT INTO `t_equipment_org` VALUES ('5', '555555', '设备组2', '222222', '1');
-
--- ----------------------------
--- Table structure for t_equipment_status
--- ----------------------------
-DROP TABLE IF EXISTS `t_equipment_status`;
-CREATE TABLE `t_equipment_status` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `equipmentCode` varchar(255) DEFAULT NULL COMMENT '设备编码，对应设备表number',
-  `equipmentOrderNO` varchar(255) DEFAULT NULL COMMENT '设备订单号',
-  `equipmentTime` datetime DEFAULT NULL COMMENT '设备当时时间',
-  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间，也是收到数据时间',
-  `temperatureIn` double DEFAULT NULL COMMENT '箱内温度 单位摄氏度',
-  `temperatureOut` double DEFAULT NULL COMMENT '箱外温度 单位摄氏度',
-  `humidity` double DEFAULT NULL COMMENT '设备湿度',
-  `voltage` double DEFAULT NULL COMMENT '设备电量',
-  `longitude` double DEFAULT NULL COMMENT '经度',
-  `latitude` double DEFAULT NULL COMMENT '纬度',
-  `openStatus` tinyint(4) DEFAULT NULL COMMENT '开箱状态 0: 开箱 1: 关箱',
-  `compressorStatus` tinyint(4) DEFAULT NULL COMMENT '压缩机状态  0:开机 1: 关机',
-  `temperatureUpperLimit` double DEFAULT NULL COMMENT '设备温度上限',
-  `temperatureLowerLimit` double DEFAULT NULL COMMENT '设备温度下限',
-  `openPassword` varchar(255) DEFAULT NULL COMMENT '开箱密码',
-  `adminPassword` varchar(255) DEFAULT NULL COMMENT '管理密码',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8 COMMENT='设备推送状态信息表';
-
--- ----------------------------
--- Records of t_equipment_status
--- ----------------------------
-INSERT INTO `t_equipment_status` VALUES ('1', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 05:42:01', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('2', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 05:54:40', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('3', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 06:01:12', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('4', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 00:41:36', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('5', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 00:42:48', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('6', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:41:21', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('7', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:42:46', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('8', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:42:46', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('9', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:42:46', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('10', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:42:46', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('11', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:13', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('12', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:13', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('13', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:13', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('14', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:13', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('15', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:32', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('16', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:32', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('17', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:32', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('18', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:50:32', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('19', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:52:19', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('20', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:52:19', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('21', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:52:19', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('22', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:52:19', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('23', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:53:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('24', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:53:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('25', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:53:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('26', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:53:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('27', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:54:06', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('28', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:54:06', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('29', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:54:06', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('30', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:54:06', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('31', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:55:21', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('32', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:55:21', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('33', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:55:21', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('34', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:55:21', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('35', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:56:38', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('36', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:56:38', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('37', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:56:38', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('38', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:56:39', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('39', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:18', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('40', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:18', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('41', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:18', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('42', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:18', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('43', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:26', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('44', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:26', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('45', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:26', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('46', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-07 15:57:26', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('47', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 11:27:42', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('48', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 11:27:42', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('49', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 11:27:42', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('50', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 11:27:42', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('51', null, null, null, '2019-08-08 16:41:57', null, null, null, null, null, null, '0', '0', null, null, '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('52', null, null, null, '2019-08-08 16:41:57', null, null, null, null, null, null, '0', '0', null, null, '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('53', null, null, null, '2019-08-08 16:41:57', null, null, null, null, null, null, '0', '0', null, null, '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('54', null, null, null, '2019-08-08 16:41:57', null, null, null, null, null, null, '0', '0', null, null, '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('55', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 16:43:56', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('56', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 16:43:56', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('57', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 16:43:56', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('58', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 16:43:56', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('59', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 18:58:47', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('60', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-08 19:03:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('61', 'T283283', '1235645', '2019-08-06 16:31:00', '2019-08-08 19:03:17', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('62', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 11:11:45', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('63', 'T283283', '1235645', '2019-08-06 16:31:00', '2019-08-09 11:11:45', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('64', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 11:11:48', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('65', 'T283283', '1235645', '2019-08-06 16:31:00', '2019-08-09 11:11:48', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('66', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 13:39:30', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('67', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 13:40:00', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('68', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 13:41:53', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('69', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 15:03:07', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('70', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 15:03:26', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('71', 'T283283', '1235645', '2019-08-06 16:31:00', '2019-08-09 15:15:52', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('72', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 15:15:52', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('73', 'T283283', '1235645', '2019-08-06 14:31:00', '2019-08-09 15:15:52', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('74', 'T283283', '1235645', null, '2019-08-09 15:15:52', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('75', 'T283283', '1235645', '2019-08-06 16:31:00', '2019-08-09 15:28:37', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('76', 'T283283', '1235645', '2019-08-06 15:31:00', '2019-08-09 15:28:37', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('77', 'T283283', '1235645', '2019-08-06 14:31:00', '2019-08-09 15:28:37', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
-INSERT INTO `t_equipment_status` VALUES ('78', 'T283283', '1235645', null, '2019-08-09 15:28:37', '5', '23', '56', '45', '130.3232', '40.3203', '0', '0', '10', '2', '123456', '654321');
 
 -- ----------------------------
 -- Table structure for t_job
@@ -1066,42 +717,3 @@ CREATE TABLE `t_notice_read` (
 -- ----------------------------
 -- Records of t_notice_read
 -- ----------------------------
-
--- ----------------------------
--- Table structure for t_supplier
--- ----------------------------
-DROP TABLE IF EXISTS `t_supplier`;
-CREATE TABLE `t_supplier` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `number` varchar(255) DEFAULT '' COMMENT '序号',
-  `supplierName` varchar(255) DEFAULT '' COMMENT '供应商名称',
-  `status` int(1) DEFAULT '0' COMMENT '0不可用1可用',
-  `createTime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `updateTime` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `createName` varchar(255) DEFAULT '' COMMENT '创建人',
-  `updateName` varchar(255) DEFAULT '' COMMENT '更新人',
-  `isDelete` varchar(255) DEFAULT '1' COMMENT '是否删除 1正常 0删除',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_supplier
--- ----------------------------
-INSERT INTO `t_supplier` VALUES ('1', '111111', '供应商1', '0', '2019-08-05 23:37:03', '2019-08-05 23:37:03', '小明', '小明', '1');
-INSERT INTO `t_supplier` VALUES ('2', '222222', '供应商2', '0', '2019-08-05 23:37:20', '2019-08-05 23:37:20', '小红', '小红', '1');
-
--- ----------------------------
--- Table structure for t_user_org
--- ----------------------------
-DROP TABLE IF EXISTS `t_user_org`;
-CREATE TABLE `t_user_org` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userId` varchar(255) DEFAULT NULL COMMENT '用户id',
-  `orgNumbeer` varchar(255) DEFAULT NULL COMMENT '组织Number',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of t_user_org
--- ----------------------------
-INSERT INTO `t_user_org` VALUES ('1', '1', '1');
