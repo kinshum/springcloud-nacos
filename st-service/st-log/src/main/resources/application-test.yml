@@ -1,0 +1,9 @@
+#数据源配置
+server:
+  port: 8103
+
+spring:
+  datasource:
+    url: ${st.datasource.test.url}
+    username: ${st.datasource.test.username}
+    password: ${st.datasource.test.password}

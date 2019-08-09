@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>StColdChain</artifactId>
+        <groupId>com.ikats</groupId>
+        <version>1.0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>st-service</artifactId>
+    <version>1.0.1</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>st-user</module>
+        <module>st-desk</module>
+        <module>st-system</module>
+        <module>st-log</module>
+        <module>st-supplier</module>
+    </modules>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ikats</groupId>
+            <artifactId>st-common</artifactId>
+            <version>${st.tool.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <configuration>
+                    <imageName>${docker.registry.url}/blade/${project.artifactId}:${project.version}</imageName>
+                    <dockerDirectory>${project.basedir}</dockerDirectory>
+                    <dockerHost>${docker.registry.host}</dockerHost>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <registryUrl>${docker.registry.url}</registryUrl>
+                    <serverId>${docker.registry.url}</serverId>
+                    <pushImage>true</pushImage>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

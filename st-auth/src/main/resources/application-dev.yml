@@ -1,0 +1,11 @@
+#服务器端口
+server:
+  port: 8600
+
+#数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${st.datasource.dev.url}
+    username: ${st.datasource.dev.username}
+    password: ${st.datasource.dev.password}
